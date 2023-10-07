@@ -1,8 +1,7 @@
+import { redirect } from "next/navigation"
 
-const HomePage = () => {
-  return (
-    <div>Home Page</div>
-  )
+const BaseURLPage = () => {
+  return redirect('/home');
 }
 
-export default HomePage
+export default BaseURLPage;
