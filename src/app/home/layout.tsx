@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const HomeLayout = ({ children }: {children: React.ReactNode}) => {
   return (
-    <Stack>
+    <Stack sx={{ height: '100%'}}>
         <Stack sx={{  backgroundColor: 'primary.main', padding: '10px'}}>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
                 <Image src={AftermathLogo} alt="Aftermath Logo" height={80} width={80} style={{ borderRadius: '100px'}} />
@@ -19,7 +19,7 @@ const HomeLayout = ({ children }: {children: React.ReactNode}) => {
             </Box>
             <Typography variant="h4" sx={{ color: 'secondary.main', textAlign: 'center'}}>{`"It's what we do."`}</Typography>
         </Stack>
-        <Stack sx={{ width: '100%', height: '100%', alignItems: 'center', padding: '20px', backgroundColor: 'primary.light' }}>{children}</Stack>
+        <Stack sx={{ width: '100%', height: '100%', alignItems: 'center', padding: '20px', backgroundColor: 'primary.light', overflow: 'auto' }}>{children}</Stack>
     </Stack>
   )
 }

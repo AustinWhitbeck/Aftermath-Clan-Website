@@ -13,11 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body >
+      <body style={{ height: '100%'}}>
         <ThemeRegistry>
-          <Box sx={{ display: 'flex'}}>
+          <Box sx={{ display: 'flex', height: '100vh'}}>
             <NavigationMenu />
-            {children}
+            <Box sx={{ flexGrow: 1, height: '100%' }}>
+              {children}
+            </Box>
           </Box>
         </ThemeRegistry>
         </body>
