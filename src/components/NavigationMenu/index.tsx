@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NavigationMenu = () => {
   return (
-    <Stack sx={{ backgroundColor: 'gray', height: '100vh', padding: '10px', width: '200px'}}>
+    <Stack sx={{  height: '100vh', padding: '10px', width: '200px', backgroundColor: 'primary.dark'}}>
       <Link href="/home" passHref style={{ textDecoration: 'none'}}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px'}}>
             <Image src={AftermathLogo} alt="Aftermath Logo" height={30} width={30} style={{ borderRadius: '50px'}} />
