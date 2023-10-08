@@ -3,7 +3,7 @@ import { Metadata } from "next"
 import Image from "next/image";
 import AftermathLogo from '../../images/Aftermath_Icon.png';
 
-export const MemberBox = ({ name }: { name: string}) => {
+const MemberBox = ({ name }: { name: string}) => {
   return(
          <Box sx={{ backgroundColor: 'secondary.dark', width: '100%', borderRadius: '4px', padding: '10px', display: 'flex', gap: '10px'}}>
             <Image src={AftermathLogo} alt="Aftermath Logo" height={40} width={40} style={{ borderRadius: '50px'}} />
@@ -86,7 +86,7 @@ const RosterPage = () => {
         <Grid container spacing={2}>
           {founders.map((founder, index) => {
             return(
-              <Grid item xs={6} key={`${index}-founder`}>
+              <Grid item xs={12} sm={12} md={6} key={`${index}-founder`}>
                 <MemberBox name={founder.name} />
               </Grid>
             )
@@ -97,10 +97,10 @@ const RosterPage = () => {
         <Box sx={{ backgroundColor: 'primary.main', padding: '5px' }}>
           <Typography variant="h4" sx={{ color: 'secondary.light'}}>Admin</Typography>
         </Box>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} >
           {admins.map((admin, index) => {
             return(
-              <Grid item xs={6} key={`${index}-founder`}>
+              <Grid item xs={12} sm={12} md={6} key={`${index}-founder`}>
                 <MemberBox name={admin.name} />
               </Grid>
             )
@@ -114,7 +114,7 @@ const RosterPage = () => {
         <Grid container spacing={2}>
           {members.map((member, index) => {
             return(
-              <Grid item xs={6} key={`${index}-founder`}>
+              <Grid item xs={12} sm={12} md={6} key={`${index}-founder`}>
                 <MemberBox name={member.name} />
               </Grid>
             )

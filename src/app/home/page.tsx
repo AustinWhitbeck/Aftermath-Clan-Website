@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box, Stack, Typography } from "@mui/material"
 import Image from "next/image"
 import HeroBanner from '../../images/AftermathRaidHeroImage.png';
 
@@ -8,12 +8,12 @@ const INTRODUCTION_MESSAGE = `Aftermath is a high skill, tight-knit clan, lookin
 
 const HomePage = () => {
   return (
-    <>
+    <Stack sx={{ height: '100%'}}>
         <Image src={HeroBanner} alt="Hero Banner of Aftermath Members in Game" height={200} style={{ borderRadius: '10px'}} />
         <Box sx={{ padding: '20px'}}>
-            <Typography variant="subtitle2" color="secondary.dark">{INTRODUCTION_MESSAGE}</Typography>
+            <Typography variant="subtitle2" color="secondary.dark" sx={{ textOverflow: 'clip'}}>{INTRODUCTION_MESSAGE}</Typography>
         </Box>
-    </>
+    </Stack>
   )
 }
 

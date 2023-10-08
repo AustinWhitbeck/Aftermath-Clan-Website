@@ -33,7 +33,15 @@ const linksArray: NavLinkInfo[] = [
 
 const NavigationMenu = () => {
   return (
-    <Stack sx={{  height: '100vh', padding: '10px', minWidth: '200px', backgroundColor: 'primary.dark'}}>
+    <Stack sx={{  
+                height: '100vh', 
+                padding: '10px', 
+                minWidth: '200px', 
+                backgroundColor: 'primary.dark', 
+                [`@media screen and (max-width: 650px)`]: { 
+                  display: 'none', 
+                }, 
+              }}>
       <Box sx={{ border: '2px solid', borderRadius: '5px', borderColor: 'secondary.main', padding: '10px', marginBottom: '10px'}}>
         <Link href="/home" passHref style={{ textDecoration: 'none', marginBottom: '10px'}}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px'}}>

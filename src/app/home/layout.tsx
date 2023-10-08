@@ -15,7 +15,7 @@ const HomeLayout = ({ children }: {children: React.ReactNode}) => {
         <Stack sx={{  backgroundColor: 'primary.main', padding: '10px'}}>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
                 <Image src={AftermathLogo} alt="Aftermath Logo" height={80} width={80} style={{ borderRadius: '100px'}} />
-                <Typography variant="h1" sx={{  color: 'white' }}>Aftermath</Typography>
+                <Typography variant="h1" sx={{  color: 'white', fontSize: '40px' }}>Aftermath</Typography>
             </Box>
             <Typography variant="h4" sx={{ color: 'secondary.main', textAlign: 'center'}}>{`"It's what we do."`}</Typography>
         </Stack>
