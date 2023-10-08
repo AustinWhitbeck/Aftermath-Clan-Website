@@ -11,7 +11,7 @@ const HomePage = () => {
     <>
         <Image src={HeroBanner} alt="Hero Banner of Aftermath Members in Game" height={200} style={{ borderRadius: '10px'}} />
         <Box sx={{ padding: '20px'}}>
-            <Typography variant="h5" color="primary.main">{INTRODUCTION_MESSAGE}</Typography>
+            <Typography variant="h5" color="secondary.dark">{INTRODUCTION_MESSAGE}</Typography>
         </Box>
     </>
   )
