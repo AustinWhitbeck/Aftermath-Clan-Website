@@ -39,6 +39,8 @@ export const metadata: Metadata = {
 const RecruitingPage = () => {
   return (
         <Stack sx={{ padding: '5px', gap: '10px', overflowY: 'auto', height: '100%'}}>
+          <Typography variant="h4">Requirements:</Typography>
+          <Typography variant="subtitle1"><i>{`(You are required to have 3/4 of qualifications below)`}</i></Typography>
           {requirements.map((requirement) => {
             const { headerText, contentText, id } = requirement;
             return (
